@@ -4,151 +4,181 @@
     text-decoration: none !important;
 }
 body{
-    background-color: rgb(247, 248, 249) !important;
+     background-color: rgb(247, 248, 249) !important;
 }
 
+/* parte del header */
 header{
     position: relative;
     width: 100%;
 }
-.header-banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 3px 9px 29px -17px rgba(54, 54, 54, 0.1);
-    height: inherit;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.header-banner__conatiner-logo{
-    height: 150px;
-    width: 400px;
-}
-.header-banner__img-logo{
-    width: 100%;
-    height: 100%;
-}
-
-.carrusel{
+.header-carrusel{
     width: 100%;
     height: 100vh;
-   max-height: 100vh;
+}
+.header-banner-logo{
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-banner-logo__img-logo-svg{
+    width: 100%;
+    margin-top: -20px;
 }
 
 .carousel-inner .carousel-item img{
     height: 100vh !important;
 }
-.products{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 40px;
-}
 
-.products__card{
-    width: 200px;
-    height: 100px;
-    margin: 0 20px;
-    position: relative;
-    cursor: pointer;
-}
-.products__card img{
-   width: 100%;
-   height: 100%;
-   border-radius: 5px;
-}
-/* .products__container-texto{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent;
-    border-radius: 10%;
-    transition: background-color 0.5s;
-} */
-.products__container-texto:hover{
-    background-color: rgb(38, 37, 37,0.6);
-}
-.products__card p{
-   position: absolute;
-   top: 75%;
-   background-color: rgb(38, 37, 37,0.6);
-   color: white;
-   font-family: 'Courier New', Courier, monospace;
-   font-weight: bold;
-   padding: 5px;
-   width: 100%;
-   font-size: 12px;
-   text-align: center;
-   letter-spacing: 2px;
-}
-
-.contenedor-products{
+.header-products{
     background: linear-gradient(rgba(16, 15, 15,.1), black);
     width: 100%;
     height: 300px;
     position: absolute;
     bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.contenedor-products__title h3{
+.header-products__title h3{
     color: white;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
 }
 
-.section__products,.section__location{
+.header-products__container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.header-products__card{
+    width: 300px;
+    height: 150px;
+    margin: 0 20px;
+    position: relative;
+    cursor: pointer;
+    background-color: wheat;
+    border-radius: 7px;
+}
+
+.header-products__card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+   
+}
+
+.header-products__wrapper-name{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+.header-products__wrapper-name p{
+   background-color: rgb(38, 37, 37,0.6);
+   color: white;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
+   font-size: 24px;
+   text-align: center;
+   letter-spacing: 2px;
+   padding: 5px;
+   width: 100%;
+   margin: 0;
+}
+
+/* main - seciones */
+
+.section-main{
+    width: 1200px;
     margin: 60px auto;
     background-color: white;
 }
-.section__products{
-    padding: 30px 0;
-}
 
-.section__container-product{
-    width: 1200px;
-    margin:60px auto;
-    display: flex;
-}
-.section__container-product a{
-    display: flex;
-}
+/* section-product */
 
-.section__img,
-.section__text{
-    margin: 0 10px;
-}
-.section__text{
-    color: #000;
-}
-.section__text h2{
-    color: #6c757d;
-}
 
-.section__img{
+.section-products__container{
+    width: 100%;
+    margin:20px 0;
     max-height: 300px;
 }
-.section__img img{
+.section-products__container a{
+    display: flex;
+}
+.section-products__image,
+.section-products__text{
+    margin: 10px;
+}
+.section-products__image{
+    width: 30%;
+}
+.section-products__image img{
     width: 100%;
+    height: 100%;
     border-radius: 10px;
+}
+.section-products__text{
+    width: 70%;
+}
+.section-products__text h1{
+    color: #936037;
+    font-weight: 900;
+}
+.section-products__text p{
+    color: #218035;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 :target{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     padding: 30px 0
 }
-.section__location{
+
+
+
+
+/* section-location */
+
+
+.section-location{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 30px 0;
 }
+.section-location__title-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-location__title-img h2{
+    margin-top: 10px;
+    color: #218035;
+}
+
+
+
+
 .section-location__container{
     width: 1200px;
     margin: auto;
@@ -167,9 +197,38 @@ header{
     align-items: center;
 }
 
-.section-location__title h1{
+.section-location__citys-title h1{
     text-align: center;
     font-size: 22px;
+    color: #936037 ;
+}
+.section-location__citys-text ul{
+    color: #603d35;
+    list-style: none  !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.section-location__citys-text ul .section-location__phone,.section-location__citys-text ul .section-location__address{
+    position: relative;
+    margin: 10px 0;
+}
+
+.section-location__citys-text ul .section-location__phone::before{
+    content: "";
+    position:absolute;
+    background-image: url('/src/img/phone-call.png');
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    margin-left:-25px
+}
+.section-location__citys-text ul .section-location__address::before{
+    content: "";
+    position:absolute;
+    background-image: url('/src/img/home-address.png');
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    margin-left:-30px
 }
 
 .section__container-product{
